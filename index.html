@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Roxy Guys | Music • Artists • Stories</title>
+  <meta name="description" content="The Roxy Guys is a creative music producer brand developing artists, original music and visual stories.">
+  <meta property="og:title" content="The Roxy Guys">
+  <meta property="og:description" content="Music • Artists • Stories">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/assets/logo.png">
+  <meta name="theme-color" content="#0b4b43">
+  <link rel="icon" href="/assets/logo.png">
+  <style>
+    :root{
+      --teal:#0b4b43;
+      --deep:#072b27;
+      --gold:#f7b23b;
+      --orange:#f47b20;
+      --cream:#fff4d8;
+      --ink:#10201f;
+      --white:#ffffff;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(247,178,59,.35), transparent 35%),
+        radial-gradient(circle at bottom right, rgba(244,123,32,.28), transparent 36%),
+        linear-gradient(135deg, var(--cream), #fffaf0 45%, #fbd179);
+      color:var(--ink);
+      min-height:100vh;
+    }
+    .page{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:32px 18px;
+    }
+    .card{
+      width:min(1040px, 100%);
+      background:rgba(255,255,255,.72);
+      border:1px solid rgba(11,75,67,.15);
+      box-shadow:0 24px 80px rgba(7,43,39,.18);
+      border-radius:34px;
+      overflow:hidden;
+      backdrop-filter:blur(10px);
+    }
+    .hero{
+      display:grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      min-height:620px;
+    }
+    .visual{
+      background:
+        linear-gradient(145deg, rgba(11,75,67,.96), rgba(7,43,39,.98)),
+        radial-gradient(circle at 30% 20%, rgba(247,178,59,.45), transparent 30%);
+      padding:44px;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      position:relative;
+      overflow:hidden;
+    }
+    .visual:before,
+    .visual:after{
+      content:"";
+      position:absolute;
+      border-radius:50%;
+      border:3px solid rgba(247,178,59,.35);
+      width:360px;
+      height:360px;
+    }
+    .visual:before{left:-150px;top:-120px}
+    .visual:after{right:-160px;bottom:-150px}
+    .logo{
+      width:min(340px, 85%);
+      border-radius:28px;
+      filter:drop-shadow(0 18px 28px rgba(0,0,0,.35));
+      position:relative;
+      z-index:2;
+    }
+    .badge{
+      margin-top:28px;
+      color:var(--cream);
+      letter-spacing:.22em;
+      font-size:13px;
+      font-weight:800;
+      text-align:center;
+      position:relative;
+      z-index:2;
+    }
+    .content{
+      padding:56px;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+    }
+    .eyebrow{
+      color:var(--orange);
+      font-weight:900;
+      letter-spacing:.25em;
+      font-size:13px;
+      text-transform:uppercase;
+      margin-bottom:18px;
+    }
+    h1{
+      font-size:clamp(44px, 7vw, 86px);
+      line-height:.92;
+      margin:0 0 22px;
+      color:var(--deep);
+      letter-spacing:-.055em;
+    }
+    .lead{
+      font-size:clamp(18px, 2.2vw, 25px);
+      line-height:1.35;
+      color:#22413d;
+      margin:0 0 30px;
+      max-width:640px;
+    }
+    .coming{
+      display:inline-flex;
+      width:max-content;
+      align-items:center;
+      gap:10px;
+      padding:10px 15px;
+      border-radius:999px;
+      background:rgba(11,75,67,.1);
+      color:var(--teal);
+      font-weight:900;
+      margin-bottom:28px;
+    }
+    .dot{
+      width:10px;
+      height:10px;
+      background:var(--orange);
+      border-radius:50%;
+      box-shadow:0 0 0 6px rgba(244,123,32,.18);
+    }
+    .links{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      margin-top:8px;
+    }
+    .links a{
+      text-decoration:none;
+      color:var(--white);
+      background:var(--teal);
+      padding:13px 17px;
+      border-radius:999px;
+      font-weight:900;
+      transition:.2s ease;
+      box-shadow:0 8px 20px rgba(11,75,67,.18);
+    }
+    .links a:hover{
+      transform:translateY(-2px);
+      background:var(--orange);
+    }
+    .footer{
+      margin-top:42px;
+      font-size:14px;
+      color:#52706b;
+    }
+    @media(max-width:820px){
+      .hero{grid-template-columns:1fr}
+      .visual{padding:34px; min-height:360px}
+      .content{padding:38px 28px}
+      .logo{width:min(270px, 80%)}
+      .card{border-radius:26px}
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="card">
+      <div class="hero">
+        <div class="visual">
+          <img class="logo" src="/assets/logo.png" alt="The Roxy Guys logo">
+          <div class="badge">MUSIC • ARTISTS • STORIES</div>
+        </div>
+        <div class="content">
+          <div class="eyebrow">Creative Music Producer</div>
+          <h1>The Roxy Guys</h1>
+          <p class="lead">
+            A creative music producer brand developing artists, original songs and visual stories.
+          </p>
+          <div class="coming"><span class="dot"></span> New projects coming soon</div>
+          <nav class="links" aria-label="Social links">
+            <a href="https://www.youtube.com/@TheRoxyGuys" target="_blank" rel="noopener">YouTube</a>
+            <a href="https://instagram.com/theroxyguys" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://www.tiktok.com/@theroxyguys" target="_blank" rel="noopener">TikTok</a>
+            <a href="https://facebook.com/TheRoxyGuys" target="_blank" rel="noopener">Facebook</a>
+            <a href="https://x.com/theroxyguys" target="_blank" rel="noopener">X</a>
+          </nav>
+          <div class="footer">
+            Spotify and official releases will be added soon.
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
